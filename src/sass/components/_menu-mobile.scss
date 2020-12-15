@@ -1,0 +1,34 @@
+.menu-mobile {
+  @include for-size(tablet-without) {
+    display: none;
+    position: absolute;
+
+    top: 101%;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 393px;
+
+    background-color: $primary-color;
+
+    padding-top: 48px;
+    padding-bottom: 64px;
+
+    text-align: center;
+  }
+
+  &.is-open {
+    @include for-size(tablet-without) {
+      display: block;
+    }
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+  }
+
+  @include for-size(desktop) {
+    width: 100%;
+  }
+}
