@@ -1,0 +1,29 @@
+.social__icons {
+  display: flex;
+  justify-content: center;
+  min-width: 152px;
+  &-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &-link {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fea5bb;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.social__icon-svg {
+  width: 19px;
+  height: 19px;
+  fill: $primary-white;
+}
