@@ -1,3 +1,14 @@
+*,
+::after,
+::before{
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  font-family: $fonts-main-page;
+  color: $text-color-dark;
+  background-color:$primary-white;
+}
 .list {
   padding: 0;
   margin: 0;
@@ -11,4 +22,27 @@
 
 .section__title {
   margin-top: 0;
+}
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-right:40px;
+  padding-left: 40px;
+  width: 100%;
+   @media screen and (min-width: 768px){
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 1200px;}
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.subject
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
