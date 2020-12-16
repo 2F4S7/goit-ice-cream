@@ -1,3 +1,15 @@
+.conteiner__footer {
+  height: 410px;
+
+  @media screen and (min-width: 768px) {
+    height: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 247px;
+  }
+}
+
 .social__icons {
   display: flex;
   justify-content: center;
