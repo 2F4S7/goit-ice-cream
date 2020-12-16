@@ -1,19 +1,58 @@
 .conteiner__footer {
   height: 410px;
+  padding-bottom: 25px;
+  background-color: $background-color-nature;
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     height: 336px;
+    padding-bottom: 18px;
   }
 
   @media screen and (min-width: 1200px) {
     height: 247px;
+    padding-bottom: 10px;
+  }
+}
+.section__title {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 200px;
+  margin-bottom: 50px;
+  font-family: $fonts-title;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-bottom: 91px;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    margin-right: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 97px;
+    font-size: 58px;
+    line-height: 66px;
+    margin-right: 422px;
   }
 }
 
 .social__icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   min-width: 152px;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   &-item:not(:last-child) {
     margin-right: 28px;
   }
@@ -38,4 +77,60 @@
   width: 19px;
   height: 19px;
   fill: $primary-white;
+}
+
+.tell {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 43px;
+  font-family: $fonts-main-page;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.86;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+
+  &__text {
+    font-family: $fonts-main-page;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    color: $text-color-dark;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+.copirite {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+  font-family: $fonts-main-page;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: $text-color-grey;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.86;
+    max-width: 276px;
+  }
 }

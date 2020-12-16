@@ -1,5 +1,14 @@
 .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section__title {
+  margin-top: 0;
 }
