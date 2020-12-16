@@ -1,42 +1,44 @@
 <header>
-    <!-- LOGO -->
-    <nav>
-        <a href="./index.html">
-        <img src="" alt="Логотип">
-    </a>
-    <!-- Navigation -->
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">How it’s made?</a></li>
-        <li><a href="">Our products</a></li>
-        <li><a href="">Contact</a></li>
-        </ul>
+	<div class="header__conteiner">
+		<a href="./index.html" class="logo link">
+			<picture>
+				<source srcset="
+				./images/logo/logo.webp 	1x, 
+				./images/logo/logo@2x.webp  2x, 
+				./images/logo/logo@3x.webp  3x
+				" type="image/webp">
+				<img class="logo__img" srcset="
+				./images/logo/logo.png 	1x, 
+				./images/logo/logo@2x.png  2x, 
+				./images/logo/logo@3x.png  3x
+				" src="./images/logo/logo.png" alt="logo" width="199" height="50">
+			</picture>
+		</a>
 
-        <button type="button">Buy now</button>
-    <!-- Tablet-menu-button -->
+		<div class="menu-cloak" data-menu>
+			<button class="menu-cloak__button" type="button">
+				<span class="menu-cloak__text">Buy now</span>
+				<svg class="menu-cloak__icon" width="20" height="30">
+					<use href="./images/sprite.svg#icon-btnuse"></use>
+				</svg>
+			</button>
 
-        <div class="tablet-menu-button">
-            <button type="button">
-                <!-- <svg class="icon-menu-tablet" wight="20px" hight="12px">
-                    <use class="icon-menu-open" href=""></use>
-                    <use class="icon-menu-cros" href=""></use>
-                </svg> -->
-            </button>
-        </div>
-        <!-- Menu-tablet-run-->
+		  <nav class="navigatio">
+		  	<ul class="nav_list list">
+		  		<li class="nav_item">
+		  			<a class="" href="./index.html">Home</a></li>
+		  		<li class="nav_item">
+		  			<a class="" href="#">About us</a></li>
+		  		<li class="nav_item">
+		  			<a class="" href="#">How it's made?</a></li>
+		  		<li class="nav_item">
+		  			<a class="" href="#">Our products</a></li>
+		  		<li class="nav_item">
+		  			<a class="" href="#">Contact</a></li>
+			  </ul>
+			</nav>
 
-        <button type="button">Buy now</button>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">How it’s made?</a></li>
-                <li><a href="">Our products</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-    
-    </nav>
-    <div></div>
+			</div>
+	</div>
+
 </header>
