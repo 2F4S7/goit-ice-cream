@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  display: block;
+  background-color: $background-color-pink;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 193px;
+    padding-bottom: 160px;
+    padding-left: 20px;
+    padding-right: 82px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 28px;
+    padding-left: 34px;
+    // padding-right: 82px;
+  }
+  & p {
+    margin: 0;
+  }
+}
+
+.hero-title {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-bottom: 19px;
+  z-index: 50;
+  font-family: $fonts-title;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.1538;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-white;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.136;
+  }
+}
+.hero-title-span {
+  font-family: $fonts-title;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 0.965;
+  text-transform: uppercase;
+
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.905;
+  }
+}
+.hero-buttons {
+  position: relative;
+  display: flex;
+  margin-bottom: 66px;
+  z-index: 50;
+}
+.hero-button-first {
+  display: block;
+  height: 24px;
+  width: 62.4px;
+  margin-right: 8px;
+  background-color: wheat;
+  border-radius: 20px;
+}
+.hero-button-second {
+  display: block;
+  height: 24px;
+  width: 82.8px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.hero-img {
+  position: absolute;
+  max-width: 171px;
+  right: 32px;
+
+  bottom: 0;
+  z-index: 40;
+
+  @media screen and (min-width: 768px) {
+    right: 247px;
+    max-width: 143px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 450px;
+    max-width: 236px;
+  }
+}
+.hero-bg-img {
+  position: absolute;
+  bottom: 75px;
+  left: 36px;
+  max-width: 346px;
+  overflow: hidden;
+  z-index: 30;
+  @media screen and (min-width: 768px) {
+    bottom: 46px;
+    left: 307px;
+    max-width: 324px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 46px;
+    left: 307px;
+    max-width: 324px;
+  }
+}
+
+.hero-text {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-left: 120px;
+    padding-right: 500px;
+    margin: 0;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    color: $primary-white;
+    & > p {
+      margin-bottom: 7px;
+    }
+  }
+}
+// .hero-icon-svg {
+//   display: block;
+//   width: 18px;
+//   height: 18px;
+//   border-radius: 50%;
+// }
