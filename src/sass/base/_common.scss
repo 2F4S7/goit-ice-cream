@@ -18,7 +18,9 @@ body {
 
 .link {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none; 
+  padding: 0;
+  margin: 0;
 }
 
 .section__title {
@@ -28,14 +30,19 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right:40px;
-  padding-left: 40px;
+  padding-right:20px;
+  padding-left: 20px;
   width: 100%;
    @media screen and (min-width: 768px){
     width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media screen and (min-width: 1200px){
-    width: 1200px;}
+    width: 1280px;
+    padding-right: 117px; ;
+    padding-left: 117px;
+  }
 }
 
 .img {

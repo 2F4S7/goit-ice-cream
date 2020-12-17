@@ -1,44 +1,100 @@
-<header>
-	<div class="header__conteiner">
-		<a href="./index.html" class="logo link">
-			<picture>
-				<source srcset="
+
+	<header class="container">
+		<div class="header-conteiner">
+			<a href="./index.html" class="logo link">
+				<picture>
+					<source srcset="
 				./images/logo/logo.webp 	1x, 
 				./images/logo/logo@2x.webp  2x, 
 				./images/logo/logo@3x.webp  3x
 				" type="image/webp">
-				<img class="logo__img" srcset="
+					<img class="logo__img" srcset="
 				./images/logo/logo.png 	1x, 
 				./images/logo/logo@2x.png  2x, 
 				./images/logo/logo@3x.png  3x
 				" src="./images/logo/logo.png" alt="logo" width="199" height="50">
-			</picture>
-		</a>
+				</picture>
+			</a>
 
-		<div class="menu-cloak" data-menu>
-			<button class="menu-cloak__button" type="button">
-				<span class="menu-cloak__text">Buy now</span>
-				<svg class="menu-cloak__icon" width="20" height="30">
+
+			<nav class="navigatio">
+				<ul class="nav-list list">
+					<li class="list nav-item">
+						<a class="link" href="./index.html">Home</a>
+					</li>
+					<li class="listnav-item">
+						<a class="link" href="#">About us</a>
+					</li>
+					<li class="list nav-item">
+						<a class="link" href="#">How it's made?</a>
+					</li>
+					<li class="list nav-item">
+						<a class="link" href="#">Our products</a>
+					</li>
+					<li class="list nav-item">
+						<a class="link" href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="tablet-button">
+			<button type="button" class=" tablet-menu-button" data-menu-button>
+				<svg class="menu-cloak__icon" width="20" height="12">
+					<use class="icon-burger" href="./images/sprite.svg#icon-burger"></use>
+					
+				</svg>
+			
+			</button>
+			<button class="menu-button" type="button">
+				<span class="menu-text">Buy now</span>
+				<svg class="menu-icon" width="20" height="30">
 					<use href="./images/sprite.svg#icon-btnuse"></use>
 				</svg>
 			</button>
-
-		  <nav class="navigatio">
-		  	<ul class="nav_list list">
-		  		<li class="nav_item">
-		  			<a class="" href="./index.html">Home</a></li>
-		  		<li class="nav_item">
-		  			<a class="" href="#">About us</a></li>
-		  		<li class="nav_item">
-		  			<a class="" href="#">How it's made?</a></li>
-		  		<li class="nav_item">
-		  			<a class="" href="#">Our products</a></li>
-		  		<li class="nav_item">
-		  			<a class="" href="#">Contact</a></li>
-			  </ul>
-			</nav>
-
 			</div>
-	</div>
 
-</header>
+		</div>
+
+
+
+	
+	<!-- Tablet-menu-button -->
+
+	
+		
+	
+	<!-- Menu-tablet-run-->
+	<div class="menu-mobile" data-menu>
+		<button type="button" class=" tablet-menu-button" data-menu-button>
+			<svg class="menu-cloak__icon" width="20" height="12">
+		
+				<use class="icon-cros" href="./images/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+
+	<button class="menu-button-mobile" type="button">
+		<span class="menu-button-text">Buy now</span>
+		<svg class="menu-button-icon" width="20" height="30">
+			<use href="./images/sprite.svg#icon-btnuse"></use>
+		</svg>
+	</button>
+	<div>
+		<ul class="nav_list list">
+			<li class="list nav_item">
+				<a class="link link-mobile-menu" href="./index.html">Home</a>
+			</li>
+			<li class="list nav_item">
+				<a class="link link-mobile-menu" href="#">About us</a>
+			</li>
+			<li class="list nav_item">
+				<a class="link link-mobile-menu" href="#">How it's made?</a>
+			</li>
+			<li class="list nav_item">
+				<a class="link link-mobile-menu" href="#">Our products</a>
+			</li>
+			<li class="list nav_item">
+				<a class="link link-mobile-menu" href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	</header>
