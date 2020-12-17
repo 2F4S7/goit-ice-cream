@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   display: block;
+  overflow: hidden;
   background-color: $background-color-pink;
 
   @media screen and (max-width: 767px) {
@@ -23,6 +24,7 @@
 .hero-title {
   position: relative;
   display: block;
+  max-width: 218px;
   margin: 0;
   margin-bottom: 19px;
   z-index: 50;
@@ -35,6 +37,7 @@
 
   color: $primary-white;
   @media screen and (min-width: 768px) {
+    max-width: 162px;
     font-size: 22px;
     line-height: 1.136;
   }
@@ -55,8 +58,11 @@
 .hero-buttons {
   position: relative;
   display: flex;
-  margin-bottom: 66px;
+
   z-index: 50;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
 }
 .hero-button-first {
   display: block;
@@ -94,7 +100,7 @@
 .hero-bg-img {
   position: absolute;
   bottom: 75px;
-  left: 36px;
+  right: -62px;
   max-width: 346px;
   overflow: hidden;
   z-index: 30;
@@ -108,6 +114,19 @@
     left: 307px;
     max-width: 324px;
   }
+}
+.hero-img-milk {
+  position: absolute;
+  left: 34px;
+  bottom: 28px;
+  max-width: 124px;
+}
+.hero-img-girl {
+  position: absolute;
+  right: 34px;
+  bottom: 0;
+  max-width: 168px;
+  z-index: 50;
 }
 
 .hero-text {
