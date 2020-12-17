@@ -3,15 +3,23 @@
   text-align: center;
   padding-top: 125px;
   padding-bottom: 145px;
-  background-image: url(./../images/sectionbg-mobile.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 320px auto;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(./../images/sectionbg-mobile@2x.png);
+  @media screen and (max-width: 767px) {
+    background-image: url(./../images/sectionbg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(./../images/sectionbg-desktop@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 246px;
   }
 
   %titles {
@@ -27,6 +35,13 @@
     line-height: 1.17;
     color: $title-color-pink;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      @extend %titles;
+      font-size: 26px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
   }
 
   .section-title {
@@ -36,12 +51,28 @@
     letter-spacing: 0.04em;
     color: $accent-color;
     margin-bottom: 26px;
+
+    @media screen and (min-width: 768px) {
+      @extend %titles;
+      font-size: 48px;
+      margin-bottom: 50px;
+    }
   }
 }
 
 .information {
   text-align: left;
   padding-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 66px;
+
+    .txt-information {
+      width: 50%;
+      margin-left: 17px;
+    }
+  }
 
   .description {
     font-weight: 500;
@@ -51,6 +82,16 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 27px;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+      margin-top: 50px;
+      padding-left: 0px;
+      padding-right: 30px;
+      margin-bottom: 22px;
+    }
   }
 
   .description-txt {
@@ -60,6 +101,15 @@
     color: $text-color-grey;
     padding: 0px 30px;
     margin-bottom: 27px;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+      padding: 0px;
+      margin-bottom: 62px;
+      letter-spacing: 0.04em;
+    }
   }
 
   .made-button {
@@ -89,17 +139,36 @@
 .made-list {
   text-align: left;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   .item {
     margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      margin-right: 0;
+      padding-right: 20px;
+    }
   }
 
   .item:not(:last-child) {
     margin-bottom: 38px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
   }
 
   .img-made {
     display: block;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
   }
 
   .item-number {
@@ -110,6 +179,13 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-bottom: 13px;
+      font-size: 48px;
+      line-height: 1.15;
+    }
   }
 
   .item-txt {
