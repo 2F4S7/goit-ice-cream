@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   font-family: $fonts-main-page;
   color: $text-color-dark;
-  background-color:$primary-white;
+  background-color: $primary-white;
 }
 .list {
   padding: 0;
@@ -28,14 +28,15 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right:40px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 100%;
-   @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1200px){
-    width: 1200px;}
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .img {
@@ -45,8 +46,7 @@ body {
   width: 100%;
 }
 
-.subject
-{
+.subject {
   margin-top: 0px;
   margin-bottom: 0px;
 }
