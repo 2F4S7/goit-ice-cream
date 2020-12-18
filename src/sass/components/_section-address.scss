@@ -1,22 +1,23 @@
 .section-address {
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 113px;
   background-color: $background-color-nature;
 
   @media screen and (min-width: 768px) {
-    padding-left: 36px;
-    padding-right: 36px;
     padding-bottom: 158px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-left: 115px;
-    padding-right: 115px;
     padding-bottom: 165px;
     background-image: url(../images/bg-loc.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+.address-container {
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -56,11 +57,10 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
-  max-width: 250px;
+  max-width: 300px;
 
   @media screen and (min-width: 768px) {
     padding: 50px 30px;
-    max-width: 300px;
   }
 
   @media screen and (min-width: 1280px) {
