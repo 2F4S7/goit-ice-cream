@@ -1,12 +1,7 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
 @import './utils/normalize';
 @import './utils/mixins';
+@import './utils/breakpoints';
 @import './base/common';
 @import './components/container';
 @import './components/menu';
@@ -14,11 +9,7 @@
 @import './components/hero';
 @import './components/section-made';
 @import './components/section-address';
+@import './components/section-slider';
 @import './components/footer';
 @import './components/buttons';
 
-// @import './components/menu';
-// @import './components/menu-mobile';
-// @import './components/section-mate';
-// @import './components/footer';
-// @import './components/buttons';
