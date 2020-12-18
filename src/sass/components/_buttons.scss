@@ -8,9 +8,7 @@
     cursor: pointer;
 }
 
-.menu-button {
-  height: 44px;
-  width: 209px;
+.menu-button-mobile {
   border-radius: 22px;
   border-color: transparent;
   display: flex;
@@ -26,8 +24,20 @@
   &:focus .menu-icon {
     fill: #ecebeb;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 44px;
+    width: 186px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 44px;
+    width: 209px;
+  }
+  @media screen and (min-width: 1280px) {
+    // height: 44px;
+    // width: 209px;
+  }
 }
-.menu-text {
+.menu-button-text {
   font-family: $fonts-main-page;
   font-size: 16px;
   font-style: normal;
@@ -36,11 +46,34 @@
   letter-spacing: 0em;
   text-align: center;
   color: $use-accent-color;
-  margin-right: 16px;
+  width: 91px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-right: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 14px;
+  }
 }
-.menu-icon {
+// .menu-icon-burger {
+//   @media screen and (min-width: 320px) and (max-width: 767px) {
+//     position: absolute;
+//     top: 25px;
+//     right: 0px;
+//   }
+// }
+.menu-button-icon {
+  height: 8px;
+  width: 5px;
+
   fill: $primary-white;
   stroke: $use-accent-color;
+}
+// .menu-icon-cros {
+//   margin-right: 28px;
+//   margin-top: 3px;
+// }
+.tablet-menu-button:focus .menu-icon-cros {
+  fill: #ecebeb;
 }
 .hero-button-first {
   height: 24px;
@@ -62,6 +95,20 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 24px;
+    width: 62px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 24px;
+    width: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 40px;
+    width: 104px;
+    font-size: 14px;
+    line-height: 1.2857;
+  }
 }
 .hero-button-second {
   height: 24px;
@@ -71,7 +118,7 @@
   font-size: 8px;
   font-style: normal;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 1.25;
   letter-spacing: 0em;
   display: flex;
   justify-content: center;
@@ -84,6 +131,20 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 24px;
+    width: 83px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 24px;
+    width: 83px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 40px;
+    width: 138px;
+    font-size: 14px;
+    line-height: 1.2857;
+  }
 }
 .hero-right-svg {
   height: 26px;
@@ -91,5 +152,47 @@
   border-radius: 13px;
   fill: $accent-color;
   background-color: $primary-white;
+}
+
+.menu-button {
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    height: 44px;
+    border-radius: 22px;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-white;
+    padding: auto;
+    outline-color: $use-accent-color;
+    width: 160px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 159px;
+  }
+}
+.menu-text {
+  font-family: $fonts-main-page;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    margin-right: 13px;
+  }
+}
+.menu-icon {
+  height: 8px;
+  width: 4px;
+  fill: $primary-white;
+  @media screen and (min-width: 768px) {
+    margin-top: 3px;
+  }
 }
 
