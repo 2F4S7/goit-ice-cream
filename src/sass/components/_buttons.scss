@@ -1,16 +1,93 @@
 button {
-  button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-button {
+  height: 44px;
+  width: 209px;
+  border-radius: 22px;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-white;
+  padding: auto;
+  -moz-outline-radius: 22px;
+  outline-color: $use-accent-color;
+  &:focus {
+    background-color: #ecebeb;
+  }
+  &:focus .menu-icon {
+    fill: #ecebeb;
   }
 }
-// .menu-cloak__button {
-//   height: 44px;
-//   width: 209px;
-//   border-radius: 22px;
-//   border-color: $primary-white;
-// }
+.menu-text {
+  font-family: $fonts-main-page;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $use-accent-color;
+  margin-right: 16px;
+}
+.menu-icon {
+  fill: $primary-white;
+  stroke: $use-accent-color;
+}
+.hero-button-first {
+  height: 24px;
+  width: 62px;
+  border-radius: 20px;
+  background-color: $use-accent-color;
+  font-family: $fonts-main-page;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $primary-white;
+  cursor: pointer;
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+.hero-button-second {
+  height: 24px;
+  width: 83px;
+  border-radius: 20px;
+  font-family: $fonts-main-page;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $accent-color;
+  background: $primary-white;
+
+  cursor: pointer;
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+.hero-right-svg {
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  fill: $accent-color;
+  background-color: $primary-white;
+}
