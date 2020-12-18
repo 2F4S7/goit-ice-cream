@@ -1,1 +1,29 @@
-<section>slider</section>
+<!-- Change the browser window width to see the image change.
+
+<picture>
+    <source srcset="/media/cc0-images/surfer-240-200.jpg"
+            media="(min-width: 800px)">
+    <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+</picture> -->
+
+<section>
+	<div class="slider__img">
+		<pictures>
+			<source srcset="
+			./images/kollage-tablet.webp 	1x,
+			./images/kollage-tablet@2x.webp 2x," media="(min-width: 1200px)" />
+			<!-- <img src="
+			./images/kollage-desktop.jpg" alt="Картинки с мороженкой" /> -->
+			<source srcset="
+			./images/kollage-tablet.webp 	1x,
+			./images/kollage-tablet@2x.webp 2x," media="(min-width: 768px)" />
+			<!-- <img src="
+			./images/kollage-tablet.jpg" alt="Картинки с мороженкой" /> -->
+			<source srcset="
+			./images/kollage-mobile.webp 	1x,
+			./images/kollage-mobile@2x.webp 2x," media="(max-width: 767px)" />
+			<img src="
+			./images/kollage-mobile.jpg" alt="Картинки с мороженкой" />
+		</pictures>
+	</div>
+</section>
