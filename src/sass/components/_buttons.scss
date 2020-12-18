@@ -58,6 +58,13 @@ button {
   text-align: center;
   color: $primary-white;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 104px;
+    margin-right: 15px;
+  }
+
   &:focus {
     background-color: #ecebeb;
   }
@@ -78,6 +85,11 @@ button {
   text-align: center;
   color: $accent-color;
   background: $primary-white;
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 138px;
+  }
 
   cursor: pointer;
   &:focus {
