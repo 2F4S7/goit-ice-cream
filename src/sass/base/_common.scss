@@ -41,37 +41,12 @@ body {
 		padding-right: 34px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1280px) {
 		width: 1280px;
 		padding-right: 117px;
-		;
 		padding-left: 117px;
 	}
 }
-
-// .container {
-//   width: 100%;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 20px;
-//   padding-right: 20px;
-
-//   @include for-size(mobile) {
-//     width: $mobile;
-//   }
-
-//   @include for-size(tablet) {
-//     width: $tablet;
-//     padding-left: 34px;
-//     padding-right: 34px;
-//   }
-
-//   @include for-size(desktop) {
-//     width: $desktop;
-//     padding-left: 75px;
-//     padding-right: 75px;
-//   }
-// }
 
 .img {
 	display: block;
