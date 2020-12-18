@@ -25,3 +25,24 @@
     }
   }
 }
+
+@mixin font($fontSize, $fontWeight, $lineHeight, $letterSpacing) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin flex-box($mainAxis: flex-start, $crossAxis: stretch) {
+  display: flex;
+  justify-content: $mainAxis;
+  align-items: $crossAxis;
+}
+
+@mixin button($btnPadding, $btnColor) {
+  padding: $btnPadding;
+  background-color: $btnColor;
+  border: 0;
+  border-radius: 22px;
+  cursor: pointer;
+}
