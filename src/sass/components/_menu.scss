@@ -41,7 +41,8 @@
     display: flex;
 }
 .tablet-menu-button{
-  
+    position: relative;
+    z-index: 100;
     display: block;
     border: none;
     padding: 0;
@@ -49,7 +50,9 @@
     background-color: transparent;
     padding-bottom: 20px;
     padding-top: 20px;
-
+    @media screen and (max-width: 767px){
+    padding-right: 15px;
+    }
     @media screen and (min-width: 1280px){
         display: none;
     }
@@ -73,6 +76,7 @@
 
 }
 .menu-mobile{
+    padding-top: 60px;
     position: absolute;
     display: none;
    
@@ -129,11 +133,11 @@
 .icon-burger{
     fill: $accent-color;
 }
-.icon-cros{
-    fill: rebeccapurple;
+// .icon-cros{
+//     fill: rebeccapurple;
     // position: relative;
     // z-index: 55;
-}
+// }
 // .icon-cros{
 //     position: absolute;
 //     z-index: 5;
