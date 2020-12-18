@@ -870,6 +870,311 @@ body {
   }
 }
 
+.section-address {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 113px;
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 768px) {
+  .section-address {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 158px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-address {
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-bottom: 165px;
+    background-image: url(../images/bg-loc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.address-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  margin-bottom: -30px;
+  -webkit-transform: translate(0, -84px);
+          transform: translate(0, -84px);
+}
+
+@media screen and (min-width: 400px) {
+  .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 3px;
+    -webkit-transform: translate(0, -78px);
+            transform: translate(0, -78px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-list {
+    margin-bottom: -16px;
+    -webkit-transform: translate(0, -102px);
+            transform: translate(0, -102px);
+    font-size: 16px;
+  }
+}
+
+.address-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+  max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-item {
+    padding: 50px 30px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-item {
+    padding: 51px 44px 62px;
+    max-width: 370px;
+  }
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.address-title {
+  font-weight: inherit;
+  font-size: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-title {
+    font-size: 16px;
+    width: 73px;
+    height: 28px;
+  }
+}
+
+.address-item:nth-child(2) .address-title {
+  background-color: #c2e297;
+  width: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-item:nth-child(2) .address-title {
+    width: 138px;
+  }
+}
+
+.city,
+.workday {
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.city {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .city {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .city {
+    margin-bottom: 10px;
+  }
+}
+
+.address-description {
+  line-height: 1.5;
+  color: #907e82;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .address-description {
+    line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-description {
+    line-height: 1.83;
+  }
+}
+
+.time {
+  color: #ffa5ba;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .time {
+    line-height: 1.86;
+  }
+}
+
+.address-contacts {
+  line-height: 1.5;
+  color: #907e82;
+}
+
+@media screen and (min-width: 768px) {
+  .address-contacts {
+    line-height: 1.83;
+  }
+}
+
+.workday-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .workday-list-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .workday-list-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.address-description::after,
+.workday-list::after {
+  content: '';
+  border: 1px solid #e1e1e1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .address-description::after,
+  .workday-list::after {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-description::after,
+  .workday-list::after {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.address-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .address-button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.address-button .button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-button .button:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
 .conteiner__footer {
   height: 410px;
   padding-bottom: 25px;

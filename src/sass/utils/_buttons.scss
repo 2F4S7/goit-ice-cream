@@ -1,40 +1,18 @@
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
+// button {
+//   padding: 0;
+//   border: none;
+//   font: inherit;
+//   color: inherit;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
 
-.menu-cloak__button {
-  height: 44px;
-  width: 209px;
-  border-radius: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $primary-white;
-  padding: auto;
-  -moz-outline-radius: 22px;
-  outline-color: $use-accent-color;
-  &:focus {
-    background-color: $use-accent-color;
-  }
-  &:focus .menu-cloak__icon {
-    fill: $use-accent-color;
-    stroke: $primary-white;
-  }
-  &:focus .menu-cloak__text {
-    color: $primary-white;
-  }
-}
-.menu-cloak__icon {
-  fill: $primary-white;
-  stroke: $use-accent-color;
-}
-// .menu-cloak__text {
-//   font-family: 'DM Sans', sans-serif;
+// .menu-icon {
+//   fill: $primary-white;
+//   stroke: $use-accent-color;
+// }
+// .menu-text {
+//   font-family: $fonts-main-page;
 //   font-size: 16px;
 //   font-style: normal;
 //   font-weight: 700;
