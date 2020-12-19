@@ -30,11 +30,9 @@
   margin-bottom: -30px;
   transform: translate(0, -84px);
 
-  @media screen and (min-width: 400px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
