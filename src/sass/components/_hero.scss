@@ -20,7 +20,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 84px;
-    padding-bottom: 102px;
+    padding-bottom: 56px;
     padding-left: 115px;
   }
   & p {
@@ -151,9 +151,15 @@
   position: absolute;
   left: 34px;
   bottom: 28px;
-  max-width: 124px;
+
   @media screen and (min-width: 768px) {
     display: block;
+    max-width: 124px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 188px;
+    left: 78px;
+    bottom: 45px;
   }
 }
 .hero-img-girl {
@@ -166,12 +172,17 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 1200px) {
+    right: 109px;
+    max-width: 293px;
+  }
 }
 
 .hero-text {
   display: none;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: inline-block;
+    max-width: 114px;
     padding-left: 120px;
     padding-right: 500px;
     margin: 0;
@@ -180,9 +191,48 @@
     line-height: 1.5;
 
     color: $primary-white;
-    & > p {
-      margin-bottom: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.4;
+    padding-left: 180px;
+    padding-right: 785px;
+  }
+  & > p {
+    position: relative;
+    z-index: 50;
+    display: inline-block;
+    width: 114px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      width: 200px;
     }
+  }
+}
+.hero-info-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  background-color: $primary-white;
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+.hero-info-icon {
+  fill: $accent-color;
+  width: 7px;
+  height: 7px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 10px;
   }
 }
 .shop {
@@ -194,11 +244,18 @@
     // top: 96px;
     right: 44px;
   }
+  @media screen and (min-width: 1200px) {
+    top: 69px;
+    right: 97px;
+  }
   & .item {
     position: relative;
   }
   & .item + .item {
     margin-top: 13px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 15px;
+    }
   }
 }
 .shop-points {
@@ -210,15 +267,15 @@
   font-weight: normal;
   font-size: 28px;
   line-height: 1.14;
+  text-align: center;
 
-  // text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $accent-color;
   @media screen and (min-width: 1200px) {
-    font-size: 28px;
-    line-height: 1.14;
+    font-size: 46px;
+    line-height: 1.152;
   }
 }
 .shop-points-name {
@@ -229,7 +286,8 @@
   font-size: 8px;
   line-height: 1.25;
 
-  // text-align: right;
+  text-align: right;
+  padding-right: 21px;
 
   color: $primary-white;
   @media screen and (min-width: 1200px) {
@@ -246,6 +304,11 @@
     height: 16px;
     border-radius: 50%;
     background-color: $primary-white;
+
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 // .hero-icon-svg {
