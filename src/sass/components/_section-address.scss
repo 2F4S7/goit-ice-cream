@@ -293,3 +293,10 @@
   fill: $primary-white;
   --color1: $accent-color;
 }
+
+.animated:hover,
+.animated:focus {
+  animation-name: headShake;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+}
