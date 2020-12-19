@@ -168,7 +168,12 @@
 
   &:hover,
   :focus {
-    background: #ecebeb;
+    background: $accent-color;
+  }
+
+  &:hover .product-icon,
+  &:focus .product-icon {
+    fill: $primary-white;
   }
 }
 
