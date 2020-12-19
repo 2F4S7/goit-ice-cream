@@ -10,7 +10,6 @@
 	align-items: center;
 
 	@media screen and (max-width: 1279px) {
-
 		align-items: center;
 	}
 
@@ -22,12 +21,6 @@
 	@media screen and (min-width: 1280px) {
 		padding-left: 46px;
 	}
-
-	//     @media screen and (min-width: 1280px){
-	//      padding-right: 46px;
-	//  }
-
-	@media screen and (min-width: 1279px) {}
 }
 
 .menu-button {
@@ -57,11 +50,11 @@
 	padding: 0;
 	margin: 0;
 	background-color: transparent;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	padding-left: 17px;
 
 	@media screen and (max-width: 767px) {
-		padding-right: 15px;
 		position: relative;
 	}
 
@@ -79,7 +72,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	padding-right: 4px;
+	padding-right: 30px;
 	padding-left: 4px;
 }
 
@@ -90,13 +83,11 @@
 		margin-top: 6px;
 	}
 
-
 }
 
 .tablet-button {
 	display: flex;
-
-	@media screen and (max-width: 1279px) {}
+	align-items: center;
 
 }
 
@@ -107,7 +98,6 @@
 	display: none;
 	top: 0;
 	right: 0;
-	// display: inline-block;
 	background-color: $background-color-menu;
 	width: 100%;
 
@@ -185,10 +175,6 @@
 	height: 20px;
 }
 
-// .icon-cros{
-//     position: absolute;
-//     z-index: 5;
-// }
 .menu-button-mobile {
 	display: block;
 	margin-right: auto;
