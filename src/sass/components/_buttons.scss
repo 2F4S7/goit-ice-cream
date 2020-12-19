@@ -1,11 +1,10 @@
-
-  button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .menu-button-mobile {
@@ -18,10 +17,12 @@
   padding: auto;
   -moz-outline-radius: 22px;
   outline-color: $use-accent-color;
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: #ecebeb;
   }
-  &:focus .menu-icon {
+  &:focus,
+  &:hover {
     fill: #ecebeb;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -92,7 +93,8 @@
   text-align: center;
   color: $primary-white;
   cursor: pointer;
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: #ecebeb;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -128,14 +130,12 @@
   background: $primary-white;
 
   cursor: pointer;
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: #ecebeb;
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    height: 24px;
-    width: 83px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+  @media screen and (min-width: 320px) and (max-width: 1279px) {
     height: 24px;
     width: 83px;
   }
@@ -155,7 +155,8 @@
 }
 
 .menu-button {
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: #ecebeb;
   }
   @media screen and (min-width: 768px) {
@@ -195,4 +196,113 @@
     margin-top: 3px;
   }
 }
+// .product-icon {
+//   display: block;
+//   background-color: $primary-white;
+//   height: 40px;
+//   width: 40px;
+//   border-radius: 20px;
+// }
+.pruduct-arrow {
+  display: block;
+  height: 11px;
+  width: 11px;
+  fill: $use-accent-color;
+}
+// .button-ol,
+// .button-fr {
+//   height: 44px;
+//   width: 161px;
+//   border-radius: 22px;
 
+//   font-family: $fonts-main-page;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 1.3125;
+//   letter-spacing: 0em;
+//   text-align: center;
+//   outline-color: $accent-color;
+// }
+// .button-ol .address-button-icon {
+//   fill: $accent-color;
+//   stroke: white;
+// }
+// .button-fr .address-button-icon {
+//   fill: $primary-white;
+// }
+// .button-ol {
+//   // background-color: $primary-white;
+//   background-color: $accent-color;
+//   color: $primary-white;
+// }
+// .button-fr {
+//   background-color: $primary-white;
+//   color: $accent-color;
+//   margin-top: 10px;
+// }
+.button:last-child {
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+// ,
+// .button:first-child:hover {
+//   background-color: #ecebeb;
+// }
+.address-button .button {
+  width: 161px;
+  height: 44px;
+  background-color: $primary-white;
+  color: $accent-color;
+  outline-color: $accent-color;
+  font-weight: 700;
+  line-height: 1.3;
+  border-radius: 22px;
+  border: 1px solid transparent;
+
+  @media screen and (min-width: 768px) {
+    width: 175px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
+}
+
+.address-button .button:not(:last-child) {
+  margin-bottom: 10px;
+  background-color: $accent-color;
+  color: $primary-white;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 190px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
+}
+
+.button:first-child .address-button-icon {
+  fill: $primary-white;
+  stroke: $primary-white;
+  margin-left: 13px;
+}
+.button:last-child .address-button-icon {
+  fill: $primary-white;
+  &:focus,
+  &:hover {
+    fill: #ecebeb;
+  }
+}
+.button:not(:last-child) .address-button-icon {
+  color: #ffffff;
+  margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
