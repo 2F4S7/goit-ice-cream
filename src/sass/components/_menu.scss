@@ -31,6 +31,7 @@
 }
 
 .menu-button {
+	z-index: 55;
 	@media screen and (max-width: 767px) {
 		display: none;
 
@@ -181,7 +182,7 @@
 
 .menu-icon-burger {
 	width: 20px;
-	height: 12px;
+	height: 20px;
 }
 
 // .icon-cros{
