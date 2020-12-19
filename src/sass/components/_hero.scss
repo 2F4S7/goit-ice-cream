@@ -7,22 +7,24 @@
   @media screen and (max-width: 767px) {
     overflow: hidden;
     padding-top: 137px;
-    // padding-top: 193px;
     padding-bottom: 160px;
     padding-left: 20px;
     padding-right: 82px;
   }
+
   @media screen and (min-width: 768px) {
     padding-top: 15px;
-    // padding-top: 102px;
+
     padding-bottom: 28px;
     padding-left: 34px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 84px;
     padding-bottom: 56px;
     padding-left: 115px;
   }
+
   & p {
     margin: 0;
   }
@@ -43,12 +45,14 @@
   text-transform: uppercase;
 
   color: $primary-white;
+
   @media screen and (min-width: 768px) {
     max-width: 162px;
     font-size: 22px;
     line-height: 1.136;
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 277px;
     font-size: 38px;
@@ -56,6 +60,7 @@
     margin-bottom: 25px;
   }
 }
+
 .hero-title-span {
   font-family: $fonts-title;
   font-weight: normal;
@@ -64,32 +69,38 @@
   text-transform: uppercase;
 
   color: $accent-color;
+
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 0.905;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 58px;
   }
 }
+
 .hero-buttons {
   position: relative;
   display: flex;
 
   z-index: 50;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 66px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 112px;
   }
 }
+
 .hero-button-first {
   display: block;
   height: 24px;
   width: 62.4px;
   margin-right: 8px;
-  // background-color: wheat;
+
   border-radius: 20px;
 
   @media screen and (min-width: 1200px) {
@@ -98,6 +109,7 @@
     margin-right: 15px;
   }
 }
+
 .hero-button-second {
   display: block;
   height: 24px;
@@ -123,11 +135,13 @@
     right: 247px;
     max-width: 143px;
   }
+
   @media screen and (min-width: 1200px) {
     right: 450px;
     max-width: 236px;
   }
 }
+
 .hero-bg-img {
   position: absolute;
   bottom: 75px;
@@ -135,17 +149,20 @@
   max-width: 346px;
   overflow: hidden;
   z-index: 30;
+
   @media screen and (min-width: 768px) {
     bottom: 46px;
     right: 137px;
     max-width: 324px;
   }
+
   @media screen and (min-width: 1200px) {
     bottom: 46px;
     right: 267px;
     max-width: 538px;
   }
 }
+
 .hero-img-milk {
   display: none;
   position: absolute;
@@ -156,12 +173,14 @@
     display: block;
     max-width: 124px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 188px;
     left: 78px;
     bottom: 45px;
   }
 }
+
 .hero-img-girl {
   display: none;
   position: absolute;
@@ -169,9 +188,11 @@
   bottom: 0;
   max-width: 168px;
   z-index: 50;
+
   @media screen and (min-width: 768px) {
     display: block;
   }
+
   @media screen and (min-width: 1200px) {
     right: 109px;
     max-width: 293px;
@@ -180,6 +201,7 @@
 
 .hero-text {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: inline-block;
     max-width: 114px;
@@ -199,17 +221,20 @@
     padding-left: 180px;
     padding-right: 785px;
   }
-  & > p {
+
+  &>p {
     position: relative;
     z-index: 50;
     display: inline-block;
     width: 114px;
     margin-bottom: 20px;
+
     @media screen and (min-width: 1200px) {
       width: 200px;
     }
   }
 }
+
 .hero-info-button {
   display: flex;
   justify-content: center;
@@ -225,39 +250,56 @@
     width: 26px;
     height: 26px;
   }
+   &:hover, &:focus {
+     background-color: $accent-color;
+   }
+&:hover .hero-info-icon,
+&:focus .hero-info-icon {
+  fill: $primary-white;
 }
+}
+
 .hero-info-icon {
   fill: $accent-color;
   width: 7px;
   height: 7px;
+
   @media screen and (min-width: 1200px) {
     width: 10px;
     height: 10px;
   }
+ 
 }
+
 .shop {
   position: absolute;
   display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
     top: 15px;
     // top: 96px;
     right: 44px;
   }
+
   @media screen and (min-width: 1200px) {
     top: 69px;
     right: 97px;
   }
+
   & .item {
     position: relative;
   }
-  & .item + .item {
+
+  & .item+.item {
     margin-top: 13px;
+
     @media screen and (min-width: 1200px) {
       margin-top: 15px;
     }
   }
 }
+
 .shop-points {
   position: relative;
   display: block;
@@ -273,11 +315,13 @@
   text-transform: uppercase;
 
   color: $accent-color;
+
   @media screen and (min-width: 1200px) {
     font-size: 46px;
     line-height: 1.152;
   }
 }
+
 .shop-points-name {
   display: block;
 
@@ -290,10 +334,12 @@
   padding-right: 21px;
 
   color: $primary-white;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.286;
   }
+
   &::before {
     position: absolute;
     top: -4px;
@@ -311,9 +357,3 @@
     }
   }
 }
-// .hero-icon-svg {
-//   display: block;
-//   width: 18px;
-//   height: 18px;
-//   border-radius: 50%;
-// }
