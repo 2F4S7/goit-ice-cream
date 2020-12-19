@@ -1,8 +1,14 @@
+.hero-container {
+  background-color: $background-color-pink;
+}
 .hero {
+  margin-left: auto;margin-right: auto;
   position: relative;
   display: block;
 
-  background-color: $background-color-pink;
+max-width: 1280px;
+
+ 
 
   @media screen and (max-width: 767px) {
     overflow: hidden;
@@ -28,6 +34,7 @@
   & p {
     margin: 0;
   }
+  
 }
 
 .hero-title {
