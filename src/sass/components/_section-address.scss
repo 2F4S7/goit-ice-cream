@@ -238,14 +238,14 @@
 
 .address-button .button:hover,
 .address-button .button:focus {
-  background-color: $accent-color;
-  color: $primary-white;
+  background-color: #ecebeb;
+  color: $accent-color;
 }
 
 .address-button .button:not(:last-child):hover,
 .address-button .button:not(:last-child):focus {
-  background-color: $primary-white;
-  color: $accent-color;
+  background-color: $accent-color;
+  color: $primary-white;
 }
 
 .address-button .button:not(:last-child) {
@@ -280,21 +280,14 @@
   }
 }
 
-.button:hover .address-button-icon,
-.button:focus .address-button-icon {
-  fill: $accent-color;
-  --color1: #ffffff;
-}
+// .button:hover .address-button-icon,
+// .button:focus .address-button-icon {
+//   fill: $accent-color;
+//   --color1: #ffffff;
+// }
 
-.button:not(:last-child):hover .address-button-icon,
-.button:not(:last-child):focus .address-button-icon {
-  fill: $primary-white;
-  --color1: $accent-color;
-}
-
-.animated:hover,
-.animated:focus {
-  animation-name: headShake;
-  animation-duration: 0.7s;
-  animation-timing-function: ease;
-}
+// .button:not(:last-child):hover .address-button-icon,
+// .button:not(:last-child):focus .address-button-icon {
+//   fill: $primary-white;
+//   --color1: $accent-color;
+// }
