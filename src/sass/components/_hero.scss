@@ -2,12 +2,14 @@
   background-color: $background-color-pink;
 }
 .hero {
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   display: block;
+  width: 320px;
 
-max-width: 1280px;
 
+// задала фіксовані ширини твоїм контейнерам Оксана//
  
 
   @media screen and (max-width: 767px) {
@@ -20,15 +22,16 @@ max-width: 1280px;
 
   @media screen and (min-width: 768px) {
     padding-top: 15px;
-
     padding-bottom: 28px;
     padding-left: 34px;
+    width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 84px;
     padding-bottom: 56px;
     padding-left: 115px;
+    width: 1280px;
   }
 
   & p {
@@ -60,7 +63,7 @@ max-width: 1280px;
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 277px;
     font-size: 38px;
     line-height: 1.158;
@@ -82,7 +85,7 @@ max-width: 1280px;
     line-height: 0.905;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
   }
 }
@@ -97,7 +100,7 @@ max-width: 1280px;
     margin-bottom: 66px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 112px;
   }
 }
@@ -110,7 +113,7 @@ max-width: 1280px;
 
   border-radius: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 40px;
     width: 104px;
     margin-right: 15px;
@@ -124,7 +127,7 @@ max-width: 1280px;
   background-color: #fff;
   border-radius: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 40px;
     width: 138px;
   }
@@ -143,7 +146,7 @@ max-width: 1280px;
     max-width: 143px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 450px;
     max-width: 236px;
   }
@@ -163,8 +166,8 @@ max-width: 1280px;
     max-width: 324px;
   }
 
-  @media screen and (min-width: 1200px) {
-    bottom: 46px;
+  @media screen and (min-width: 1280px) {
+    bottom: 80px;
     right: 267px;
     max-width: 538px;
   }
@@ -181,7 +184,7 @@ max-width: 1280px;
     max-width: 124px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 188px;
     left: 78px;
     bottom: 45px;
@@ -200,7 +203,7 @@ max-width: 1280px;
     display: block;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 109px;
     max-width: 293px;
   }
@@ -222,7 +225,7 @@ max-width: 1280px;
     color: $primary-white;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.4;
     padding-left: 180px;
@@ -236,7 +239,7 @@ max-width: 1280px;
     width: 114px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 200px;
     }
   }
@@ -253,7 +256,7 @@ max-width: 1280px;
   border-radius: 50%;
   background-color: $primary-white;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
@@ -289,7 +292,7 @@ max-width: 1280px;
     right: 44px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 69px;
     right: 97px;
   }
@@ -301,7 +304,7 @@ max-width: 1280px;
   & .item+.item {
     margin-top: 13px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       margin-top: 15px;
     }
   }
@@ -323,7 +326,7 @@ max-width: 1280px;
 
   color: $accent-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.152;
   }
@@ -342,7 +345,7 @@ max-width: 1280px;
 
   color: $primary-white;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.286;
   }
@@ -358,7 +361,7 @@ max-width: 1280px;
     border-radius: 50%;
     background-color: $primary-white;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
     }
