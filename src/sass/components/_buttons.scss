@@ -93,21 +93,12 @@ button {
   text-align: center;
   color: $primary-white;
   cursor: pointer;
-
-  &:focus,
-  &:hover {
-
-
   @media screen and (min-width: 1200px) {
     height: 40px;
     width: 104px;
     margin-right: 15px;
   }
 
-  &:focus {
-
-    background-color: #ecebeb;
-  }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     height: 24px;
     width: 62px;
@@ -123,6 +114,12 @@ button {
     line-height: 1.2857;
   }
 }
+
+.hero-button-first:hover,
+.hero-button-first:focus {
+  background-color: #ecebeb;
+}
+
 .hero-button-second {
   height: 24px;
   width: 83px;
@@ -151,13 +148,11 @@ button {
     background-color: #ecebeb;
   }
 
-
   @media screen and (min-width: 320px) and (max-width: 1279px) {
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    height: 24px;
-    width: 83px;
-  }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      height: 24px;
+      width: 83px;
+    }
 
     height: 24px;
     width: 83px;
@@ -178,12 +173,8 @@ button {
 }
 
 .menu-button {
-
   &:focus,
   &:hover {
-
-  &:focus {
-
     background-color: #ecebeb;
   }
   @media screen and (min-width: 768px) {
@@ -334,4 +325,3 @@ button {
     margin-left: 13px;
   }
 }
-
