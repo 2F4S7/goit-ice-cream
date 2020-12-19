@@ -93,8 +93,19 @@ button {
   text-align: center;
   color: $primary-white;
   cursor: pointer;
+
   &:focus,
   &:hover {
+
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 104px;
+    margin-right: 15px;
+  }
+
+  &:focus {
+
     background-color: #ecebeb;
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -129,13 +140,25 @@ button {
   color: $accent-color;
   background: $primary-white;
 
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 138px;
+  }
+
   cursor: pointer;
   &:focus,
   &:hover {
     background-color: #ecebeb;
   }
 
+
   @media screen and (min-width: 320px) and (max-width: 1279px) {
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 24px;
+    width: 83px;
+  }
+
     height: 24px;
     width: 83px;
   }
@@ -155,8 +178,12 @@ button {
 }
 
 .menu-button {
+
   &:focus,
   &:hover {
+
+  &:focus {
+
     background-color: #ecebeb;
   }
   @media screen and (min-width: 768px) {
@@ -196,6 +223,7 @@ button {
     margin-top: 3px;
   }
 }
+
 // .product-icon {
 //   display: block;
 //   background-color: $primary-white;
@@ -306,3 +334,4 @@ button {
     margin-left: 13px;
   }
 }
+
