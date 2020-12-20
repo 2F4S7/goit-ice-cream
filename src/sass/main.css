@@ -776,6 +776,7 @@ body {
   max-width: 346px;
   overflow: hidden;
   z-index: 30;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1070,7 +1071,7 @@ body {
   font-size: 14px;
   line-height: 1.29;
   color: #d41443;
-  padding: 0px 37px;
+  padding: 0px 40px;
   height: 44px;
   cursor: pointer;
 }
@@ -1081,6 +1082,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .information .made-button {
+    padding: 0px 34px;
     margin-left: 0px;
     font-size: 16px;
     line-height: 1.31;
@@ -2134,14 +2136,14 @@ button {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-button-mobile {
     height: 44px;
-    width: 186px;
+    width: 209px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .menu-button-mobile {
     height: 44px;
-    width: 209px;
+    width: 186px;
   }
 }
 
@@ -2205,6 +2207,13 @@ button {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-button-first {
+    height: 40px;
+    width: 104px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero-button-first {
     height: 40px;
@@ -2234,11 +2243,6 @@ button {
     font-size: 14px;
     line-height: 1.2857;
   }
-}
-
-.hero-button-first:hover,
-.hero-button-first:focus {
-  background-color: #ecebeb;
 }
 
 .hero-button-second {
@@ -2308,8 +2312,8 @@ button {
   background-color: #ffffff;
 }
 
-.menu-button:focus, .menu-button:hover {
-  background-color: #ecebeb;
+.menu-button {
+  z-index: 54;
 }
 
 @media screen and (min-width: 768px) {
@@ -2337,6 +2341,11 @@ button {
   .menu-button {
     width: 159px;
   }
+}
+
+.menu-button:focus,
+.menu-button:hover {
+  background-color: #ecebeb;
 }
 
 .menu-text {
@@ -2375,10 +2384,6 @@ button {
   fill: #c7133e;
 }
 
-.button:last-child:focus {
-  background-color: #ecebeb;
-}
-
 .address-button .button {
   width: 161px;
   height: 44px;
@@ -2392,25 +2397,31 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .address-button .button {
-    width: 175px;
+  .address-button .button:first-child {
+    width: 191px;
+  }
+  .address-button .button:last-child {
+    width: 174px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .address-button .button {
+  .address-button .button:first-child {
+    width: 198px;
+  }
+  .address-button .button:last-child {
     width: 180px;
   }
 }
 
-.address-button .button:not(:last-child) {
+.address-button .button:first-child {
   margin-bottom: 10px;
   background-color: #d41443;
   color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
-  .address-button .button:not(:last-child) {
+  .address-button .button:first-child {
     margin-bottom: 0;
     margin-right: 15px;
     width: 190px;
@@ -2418,14 +2429,20 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
-  .address-button .button:not(:last-child) {
+  .address-button .button:first-child {
     width: 198px;
   }
 }
 
-.button:first-child .address-button-icon {
-  fill: #ffffff;
-  stroke: #ffffff;
+.button:last-child {
+  background-color: #ffffff;
+}
+
+.button:last-child:focus, .button:last-child:hover {
+  background-color: #ecebeb;
+}
+
+.address-button-icon {
   margin-left: 13px;
 }
 
@@ -2433,18 +2450,16 @@ button {
   fill: #ffffff;
 }
 
-.button:last-child .address-button-icon:focus, .button:last-child .address-button-icon:hover {
+.button:first-child .address-button-icon {
+  fill: #d41443;
+  --color1: #ffffff;
+}
+
+.button:last-child:hover .address-button-icon {
   fill: #ecebeb;
 }
 
-.button:not(:last-child) .address-button-icon {
-  color: #ffffff;
-  margin-left: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .button:not(:last-child) .address-button-icon {
-    margin-left: 13px;
-  }
+.button:last-child:focus .address-button-icon {
+  fill: #ecebeb;
 }
 /*# sourceMappingURL=main.css.map */

@@ -27,16 +27,16 @@ button {
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     height: 44px;
-    width: 186px;
+    width: 209px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     height: 44px;
-    width: 209px;
+    width: 186px;
   }
-  @media screen and (min-width: 1280px) {
-    // height: 44px;
-    // width: 209px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   height: 44px;
+  //   width: 209px;
+  // }
 }
 .menu-button-text {
   font-family: $fonts-main-page;
@@ -93,6 +93,10 @@ button {
   text-align: center;
   color: $primary-white;
   cursor: pointer;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 40px;
+    width: 104px;
+  }
   @media screen and (min-width: 1200px) {
     height: 40px;
     width: 104px;
@@ -115,10 +119,10 @@ button {
   }
 }
 
-.hero-button-first:hover,
-.hero-button-first:focus {
-  background-color: #ecebeb;
-}
+// .hero-button-first:hover,
+// .hero-button-first:focus {
+//   background-color: #ecebeb;
+// }
 
 .hero-button-second {
   height: 24px;
@@ -173,10 +177,8 @@ button {
 }
 
 .menu-button {
-  &:focus,
-  &:hover {
-    background-color: #ecebeb;
-  }
+  z-index: 54;
+
   @media screen and (min-width: 768px) {
     height: 44px;
     border-radius: 22px;
@@ -192,6 +194,10 @@ button {
   @media screen and (min-width: 1280px) {
     width: 159px;
   }
+}
+.menu-button:focus,
+.menu-button:hover {
+  background-color: #ecebeb;
 }
 .menu-text {
   font-family: $fonts-main-page;
@@ -260,15 +266,7 @@ button {
 //   color: $accent-color;
 //   margin-top: 10px;
 // }
-.button:last-child {
-  &:focus {
-    background-color: #ecebeb;
-  }
-}
-// ,
-// .button:first-child:hover {
-//   background-color: #ecebeb;
-// }
+
 .address-button .button {
   width: 161px;
   height: 44px;
@@ -281,15 +279,25 @@ button {
   border: 1px solid transparent;
 
   @media screen and (min-width: 768px) {
-    width: 175px;
+    &:first-child {
+      width: 191px;
+    }
+    &:last-child {
+      width: 174px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    width: 180px;
+    &:first-child {
+      width: 198px;
+    }
+    &:last-child {
+      width: 180px;
+    }
   }
 }
 
-.address-button .button:not(:last-child) {
+.address-button .button:first-child {
   margin-bottom: 10px;
   background-color: $accent-color;
   color: $primary-white;
@@ -304,24 +312,38 @@ button {
     width: 198px;
   }
 }
-
-.button:first-child .address-button-icon {
-  fill: $primary-white;
-  stroke: $primary-white;
+.button:last-child {
+  background-color: $primary-white;
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+.address-button-icon {
   margin-left: 13px;
 }
 .button:last-child .address-button-icon {
   fill: $primary-white;
-  &:focus,
-  &:hover {
-    fill: #ecebeb;
-  }
 }
-.button:not(:last-child) .address-button-icon {
-  color: #ffffff;
-  margin-left: 8px;
+.button:first-child .address-button-icon {
+  fill: $accent-color;
+  --color1: #ffffff;
+}
+.button:last-child:hover .address-button-icon {
+  fill: #ecebeb;
+}
+.button:last-child:focus .address-button-icon {
+  fill: #ecebeb;
+}
+// .button:hover,
+// .button:focus .address-button-icon:last-child {
+//   fill: #ecebeb;
+// }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 13px;
-  }
-}
+// .button:not(:last-child) .address-button-icon {
+//   color: #ffffff;
+//   margin-left: 8px;
+
+//   @media screen and (min-width: 768px) {
+//     margin-left: 13px;
+//   }

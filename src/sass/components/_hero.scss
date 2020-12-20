@@ -135,6 +135,7 @@
   max-width: 346px;
   overflow: hidden;
   z-index: 30;
+  pointer-events: none; //Для того, щоб малюнок не перекривав кнопку бай нав
   @media screen and (min-width: 768px) {
     bottom: 46px;
     right: 137px;
