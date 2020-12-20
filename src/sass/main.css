@@ -2207,32 +2207,11 @@ button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .hero-button-first {
-    height: 40px;
-    width: 104px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-button-first {
-    height: 40px;
-    width: 104px;
-    margin-right: 15px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1279px) {
   .hero-button-first {
     height: 24px;
     width: 62px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .hero-button-first {
-    height: 24px;
-    width: 62px;
+    margin-right: 8px;
   }
 }
 
@@ -2242,6 +2221,7 @@ button {
     width: 104px;
     font-size: 14px;
     line-height: 1.2857;
+    margin-right: 15px;
   }
 }
 
