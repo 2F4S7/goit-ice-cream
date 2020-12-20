@@ -102,7 +102,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: -42%;
+    top: -41%;
   }
 }
 
@@ -168,12 +168,7 @@
 
   &:hover,
   :focus {
-    background: $accent-color;
-  }
-
-  &:hover .product-icon,
-  &:focus .product-icon {
-    fill: $primary-white;
+    background: #ecebeb;
   }
 }
 

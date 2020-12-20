@@ -12,17 +12,14 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
 Use a more readable tab size (opinionated).
 */
 :root {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
@@ -77,8 +74,7 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -97,7 +93,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -275,8 +271,7 @@ summary {
 *,
 ::after,
 ::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -333,12 +328,8 @@ body {
 }
 
 .section__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   width: 200px;
   margin-top: 0;
   margin-bottom: 0;
@@ -401,12 +392,9 @@ body {
 
 .animated:hover,
 .animated:focus {
-  -webkit-animation-name: headShake;
-          animation-name: headShake;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-name: headShake;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
 }
 
 .container-header-other {
@@ -415,22 +403,14 @@ body {
 }
 
 .header-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 1279px) {
   .header-conteiner {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -464,8 +444,6 @@ body {
 }
 
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   z-index: 40;
@@ -514,12 +492,8 @@ body {
 }
 
 .tablet-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .menu-mobile {
@@ -718,8 +692,6 @@ body {
 
 .hero-buttons {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 50;
 }
@@ -899,15 +871,9 @@ body {
 }
 
 .hero-info-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -1099,12 +1065,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .product-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -1162,7 +1124,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .product-image {
-    top: -42%;
+    top: -41%;
   }
 }
 
@@ -1222,15 +1184,9 @@ body {
 }
 
 .product-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1239,12 +1195,7 @@ body {
 
 .product-button:hover,
 .product-button :focus {
-  background: #d41443;
-}
-
-.product-button:hover .product-icon,
-.product-button:focus .product-icon {
-  fill: #ffffff;
+  background: #ecebeb;
 }
 
 .product-icon {
@@ -1267,7 +1218,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .section-made {
     background-image: url(./../images/sectionbg-desktop@2x.png);
   }
@@ -1282,7 +1233,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .section-made {
     background-image: url(./../images/sectionbg-desktop@2x.png);
   }
@@ -1317,8 +1268,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .information {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 66px;
     padding-top: 50px;
@@ -1437,8 +1386,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .made-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1578,35 +1525,19 @@ body {
   font-size: 12px;
   line-height: 1.86;
   margin-bottom: -30px;
-  -webkit-transform: translate(0, -84px);
-          transform: translate(0, -84px);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translate(0, -84px);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .address-list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     margin-bottom: 3px;
-    -webkit-transform: translate(0, -78px);
-            transform: translate(0, -78px);
+    transform: translate(0, -78px);
     font-size: 14px;
   }
 }
@@ -1614,16 +1545,14 @@ body {
 @media screen and (min-width: 1280px) {
   .address-list {
     margin-bottom: -16px;
-    -webkit-transform: translate(0, -102px);
-            transform: translate(0, -102px);
+    transform: translate(0, -102px);
     font-size: 16px;
   }
 }
 
 .address-item {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
   max-width: 300px;
@@ -1662,15 +1591,9 @@ body {
 .address-title {
   font-weight: inherit;
   font-size: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
@@ -1812,30 +1735,16 @@ body {
 }
 
 .address-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .address-button {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 
@@ -1913,12 +1822,8 @@ body {
 }
 
 .section-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: -48px;
 }
 
@@ -2009,7 +1914,6 @@ body {
 .slider__bg {
   position: relative;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fafafa), color-stop(74%, #fafafa), color-stop(74%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, #fafafa 0%, #fafafa 74%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, 0) 100%);
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -2026,7 +1930,6 @@ body {
 @media (min-width: 768px) {
   .slider__bg {
     width: 620px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#fafafa), color-stop(60%, #fafafa), color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(0deg, #fafafa 0%, #fafafa 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
     padding-bottom: 15px;
   }
@@ -2043,7 +1946,6 @@ body {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1.56%, #e1e1e1), color-stop(1.56%, #fafafa), color-stop(50%, #fafafa), color-stop(50%, #e1e1e1), color-stop(51.56%, #e1e1e1), color-stop(51.56%, #fafafa), to(#fafafa));
   background-image: linear-gradient(0deg, #e1e1e1 1.56%, #fafafa 1.56%, #fafafa 50%, #e1e1e1 50%, #e1e1e1 51.56%, #fafafa 51.56%, #fafafa 100%);
   background-size: 64px 64px;
 }
@@ -2082,8 +1984,7 @@ body {
 }
 
 .slider__text p {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .slider__text p::before {
@@ -2094,8 +1995,7 @@ body {
   top: -13px;
   left: 2px;
   background-image: url(../images/slider/quotes-mob-01.png);
-  -webkit-transform: translateZ(-1px);
-          transform: translateZ(-1px);
+  transform: translateZ(-1px);
 }
 
 @media (min-width: 768px) {
@@ -2170,14 +2070,10 @@ body {
 }
 
 .slider__points-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #c7133e;
 }
 
@@ -2250,14 +2146,10 @@ body {
 }
 
 .slider__adress-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .slider__adress-item {
@@ -2284,15 +2176,9 @@ body {
 }
 
 .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .slick-dots li:not(:last-child) {
@@ -2338,11 +2224,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .conteiner__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 274px;
     /* padding-bottom: 18px; */
   }
@@ -2378,12 +2261,8 @@ body {
 }
 
 .social__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   min-width: 152px;
   margin-bottom: 46px;
 }
@@ -2399,17 +2278,11 @@ body {
 }
 
 .social__icons-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 32px;
   width: 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: #fea5bb;
 }
@@ -2425,12 +2298,8 @@ body {
 }
 
 .tell {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-bottom: 43px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -2497,15 +2366,10 @@ body {
 }
 
 .copirite {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -2539,21 +2403,14 @@ button {
 .menu-button-mobile {
   border-radius: 22px;
   border-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   padding: auto;
   -moz-outline-radius: 22px;
   outline-color: #c7133e;
-  -webkit-animation: animate__headShake;
-          animation: animate__headShake;
+  animation: animate__headShake;
 }
 
 .menu-button-mobile:focus, .menu-button-mobile:hover {
@@ -2624,15 +2481,9 @@ button {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
@@ -2666,15 +2517,9 @@ button {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #d41443;
   background: #ffffff;
@@ -2732,15 +2577,9 @@ button {
     height: 44px;
     border-radius: 22px;
     border-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     padding: auto;
     outline-color: #c7133e;
@@ -2876,11 +2715,8 @@ button {
 
 .animated:hover,
 .animated:focus {
-  -webkit-animation-name: headShake;
-          animation-name: headShake;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-name: headShake;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
 }
 /*# sourceMappingURL=main.css.map */
