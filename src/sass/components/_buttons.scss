@@ -17,6 +17,7 @@ button {
   padding: auto;
   -moz-outline-radius: 22px;
   outline-color: $use-accent-color;
+  animation: animate__headShake;
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -336,3 +337,9 @@ button {
 //   @media screen and (min-width: 768px) {
 //     margin-left: 13px;
 //   }
+.animated:hover,
+.animated:focus {
+  animation-name: headShake;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+}
