@@ -255,17 +255,21 @@
 
   border-radius: 50%;
   background-color: $primary-white;
-
+  
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
    &:hover, &:focus {
      background-color: $accent-color;
+     transition: background-color $time $cubic,
+     transform $time $cubic;
    }
 &:hover .hero-info-icon,
 &:focus .hero-info-icon {
   fill: $primary-white;
+  transition: fill $time $cubic,
+  transform $time $cubic;
 }
 }
 
@@ -278,8 +282,7 @@
     width: 10px;
     height: 10px;
   }
- 
-}
+ }
 
 .shop {
   position: absolute;
@@ -291,7 +294,6 @@
     // top: 96px;
     right: 44px;
   }
-
   @media screen and (min-width: 1280px) {
     top: 69px;
     right: 97px;
@@ -301,7 +303,7 @@
     position: relative;
   }
 
-  & .item+.item {
+  & .item + .item {
     margin-top: 13px;
 
     @media screen and (min-width: 1280px) {
