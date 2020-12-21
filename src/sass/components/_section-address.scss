@@ -166,6 +166,10 @@
     line-height: 1.83;
   }
 
+  .link {
+    transition: $time $cubic;
+  }
+
   .link:hover,
   .link:focus {
     color: $accent-color;
