@@ -6,11 +6,12 @@
   margin-right: auto;
   position: relative;
   display: block;
+
   // width: 320px;
 
+  
 
-// задала фіксовані ширини твоїм контейнерам Оксана//
- 
+  // задала фіксовані ширини твоїм контейнерам Оксана//
 
   @media screen and (max-width: 767px) {
     overflow: hidden;
@@ -37,7 +38,6 @@
   & p {
     margin: 0;
   }
-  
 }
 
 .hero-title {
@@ -232,7 +232,7 @@
     padding-right: 785px;
   }
 
-  &>p {
+  & > p {
     position: relative;
     z-index: 50;
     display: inline-block;
@@ -255,22 +255,21 @@
 
   border-radius: 50%;
   background-color: $primary-white;
-  
+
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
-   &:hover, &:focus {
-     background-color: $accent-color;
-     transition: background-color $time $cubic,
-     transform $time $cubic;
-   }
-&:hover .hero-info-icon,
-&:focus .hero-info-icon {
-  fill: $primary-white;
-  transition: fill $time $cubic,
-  transform $time $cubic;
-}
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transition: background-color $time $cubic, transform $time $cubic;
+  }
+  &:hover .hero-info-icon,
+  &:focus .hero-info-icon {
+    fill: $primary-white;
+    transition: fill $time $cubic, transform $time $cubic;
+  }
 }
 
 .hero-info-icon {
@@ -282,7 +281,7 @@
     width: 10px;
     height: 10px;
   }
- }
+}
 
 .shop {
   position: absolute;

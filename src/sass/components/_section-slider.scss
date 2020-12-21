@@ -60,7 +60,11 @@
 }
 
 .slider__item {
-  display: inline-block;
+  	display: block;
+  	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
 
   @include for-size(mobile) {
     max-width: 100vw;
@@ -68,6 +72,7 @@
 }
 
 .slider__avatar {
+	display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 62px;
