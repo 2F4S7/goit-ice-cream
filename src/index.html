@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,15 @@
 	<!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 	<script src="./index.js"></script>
 	<script src="./js/menu-mobile.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+	
+	<script>
+	$('a[href^="#"]').click(function () {
+			var target = $(this).attr('href');
+			$('html, body').animate({
+				scrollTop: $(target).offset().top
+			}, 1000);
+		});
+	</script>
 
 
 </body>
