@@ -5,8 +5,11 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  transition: $time $cubic;
 }
-
+a {
+  transition: $time $cubic;
+}
 .menu-button-mobile {
   border-radius: 22px;
   border-color: transparent;

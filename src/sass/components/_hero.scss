@@ -6,11 +6,12 @@
   margin-right: auto;
   position: relative;
   display: block;
-  width: 320px;
 
+  // width: 320px;
 
-// задала фіксовані ширини твоїм контейнерам Оксана//
- 
+  
+
+  // задала фіксовані ширини твоїм контейнерам Оксана//
 
   @media screen and (max-width: 767px) {
     overflow: hidden;
@@ -37,7 +38,6 @@
   & p {
     margin: 0;
   }
-  
 }
 
 .hero-title {
@@ -232,7 +232,7 @@
     padding-right: 785px;
   }
 
-  &>p {
+  & > p {
     position: relative;
     z-index: 50;
     display: inline-block;
@@ -260,13 +260,16 @@
     width: 26px;
     height: 26px;
   }
-   &:hover, &:focus {
-     background-color: $accent-color;
-   }
-&:hover .hero-info-icon,
-&:focus .hero-info-icon {
-  fill: $primary-white;
-}
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transition: background-color $time $cubic, transform $time $cubic;
+  }
+  &:hover .hero-info-icon,
+  &:focus .hero-info-icon {
+    fill: $primary-white;
+    transition: fill $time $cubic, transform $time $cubic;
+  }
 }
 
 .hero-info-icon {
@@ -278,7 +281,6 @@
     width: 10px;
     height: 10px;
   }
- 
 }
 
 .shop {
@@ -291,7 +293,6 @@
     // top: 96px;
     right: 44px;
   }
-
   @media screen and (min-width: 1280px) {
     top: 69px;
     right: 97px;
@@ -301,7 +302,7 @@
     position: relative;
   }
 
-  & .item+.item {
+  & .item + .item {
     margin-top: 13px;
 
     @media screen and (min-width: 1280px) {
@@ -341,13 +342,14 @@
   line-height: 1.25;
 
   text-align: right;
-  padding-right: 21px;
+  padding-right: 10px;
 
   color: $primary-white;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.286;
+    padding-right: 21px;
   }
 
   &::before {
