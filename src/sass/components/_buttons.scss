@@ -346,3 +346,45 @@ a {
   animation-duration: 0.7s;
   animation-timing-function: ease;
 }
+
+.rectangle {
+  position: relative;
+  display: inline-block;
+  margin: 0em 0.5em;
+  padding: 0.25em 1.25em;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+.rectangle:before {
+  position: absolute;
+  content: attr(data-text);
+  display: inline-block;
+  padding: 0.25em 1.25em;
+  color: #fff;
+  text-decoration: none;
+  top: 0em;
+  left: -100%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -mos-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border: none !important;
+}
+.rectangle:hover {
+  border: none !important;
+  background: #555;
+  color: #fff;
+}
+.rectangle:hover:before {
+  left: 0%;
+  border: none !important;
+  box-shadow: inset -5px -5px 10px -7px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px -7px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.rectangle:after {
+  border: none !important;
+}
