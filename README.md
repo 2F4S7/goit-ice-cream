@@ -13,14 +13,12 @@
   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="sass" width="100" height="100"/>
    </p>
  
- ## 
- <a class="pink" data-text="читать далее" href=" https://2f4s7.github.io/goit-ice-cream/">Life Page</a>
+ ## [Life Page](https://2f4s7.github.io/goit-ice-cream/")
 
 ![alt text](https://i.ibb.co/VpSMsM5/prew.jpg?raw=true)
 
-# parcel-project-template
-
-## Developing
+## Developing 
+- [parcel-project-template](https://github.com/goitacademy/parcel-project-template) 
 
 ### Prerequisites
 
