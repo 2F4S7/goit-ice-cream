@@ -27,6 +27,7 @@
     "sass": "^1.26.9"
   },
   "dependencies": {
+    "npm-update": "^2.1.0",
     "slick-carousel": "^1.8.1"
   }
 }

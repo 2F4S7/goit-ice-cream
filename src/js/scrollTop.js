@@ -7,3 +7,9 @@ $('a[href^="#"]').click(function () {
     1000,
   );
 });
+// const update = require('npm-update');
+// const pkg = require('../package.json')(async () => {
+//   const { needUpdate } = await update({ pkg });
+//   if (needUpdate) return;
+//   // do some stuff
+// })();
