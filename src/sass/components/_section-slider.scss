@@ -175,7 +175,7 @@
     top: -13px;
     left: 2px;
 
-    background-image: url(../images/slider/quotes-mob-01.png);
+    background-image: url('/images/slider/mobile/quotes-mob-01.png');
     transform: translateZ(-1px);
 
     @include for-size(tablet) {
@@ -363,7 +363,7 @@
   & li:first-child button {
     width: 13px;
     height: 12px;
-    background-image: url(../images/home.svg);
+    background-image: url(../images/slider/home-img.png);
     background-color: transparent;
     border-radius: 0;
     fill: #d9d9d9;
