@@ -1,7 +1,7 @@
 $accent-color: #d41443;
 $use-accent-color: #c7133e;
 $title-color-pink: #ffa5ba;
-$text-color-grey:#907e82;
+$text-color-grey: #907e82;
 
 $primary-white: #ffffff;
 $text-color-dark: #000000;
@@ -10,9 +10,14 @@ $background-color-pink: #ffb8ca;
 $background-color-yellow: #f0d1a5;
 $background-color-green: #c2e297;
 $background-color-menu: #e17992;
+$background-color-nature: #fff5f6;
 
 /* Шрифты */
 $fonts-main-page: 'DM Sans', sans-serif;
 $fonts-title: 'Titan One';
+
+// Кубик и время
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$time: 250ms;
 
 /* Название цвета можно меня, это для 1-го раза такое...*/

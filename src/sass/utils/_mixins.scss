@@ -1,0 +1,48 @@
+@mixin for-size($range) {
+  $mobile: $mobile;
+  $tablet: $tablet;
+  $desktop: $desktop;
+
+  @if $range == mobile-only {
+    @media (max-width: #{$mobile - 1}) {
+      @content;
+    }
+  } @else if $range == mobile {
+    @media (min-width: $mobile) {
+      @content;
+    }
+  } @else if $range == tablet-only {
+    @media (max-width: #{$desktop - 1}) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+@mixin font($fontSize, $fontWeight, $lineHeight, $letterSpacing) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin flex-box($mainAxis: flex-start, $crossAxis: stretch) {
+  display: flex;
+  justify-content: $mainAxis;
+  align-items: $crossAxis;
+}
+
+@mixin button($btnPadding, $btnColor) {
+  padding: $btnPadding;
+  background-color: $btnColor;
+  border: 0;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
