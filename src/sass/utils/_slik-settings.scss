@@ -1,0 +1,37 @@
+.slick-dots {
+  @include flex-box(center, center);
+
+  li {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+}
+
+.slick-dots {
+  & button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    color: transparent;
+    background-color: #d9d9d9;
+    outline: none;
+  }
+
+  & li:first-child button {
+    width: 13px;
+    height: 12px;
+    background-image: url(../images/icons/home.svg);
+    background-color: transparent;
+    border-radius: 0;
+    fill: #d9d9d9;
+  }
+
+  & .slick-active button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $use-accent-color;
+  }
+}
