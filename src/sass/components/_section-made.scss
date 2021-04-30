@@ -179,6 +179,7 @@
     padding: 0px 40px; //підігнав кнопку під макет. Радецький
     height: 44px;
     cursor: pointer;
+    transition: $time $cubic;
 
     &:focus,
     &:hover {

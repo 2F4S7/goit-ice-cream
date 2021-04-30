@@ -25,7 +25,6 @@
     }
   }
 }
-
 @mixin font($fontSize, $fontWeight, $lineHeight, $letterSpacing) {
   font-size: $fontSize;
   font-weight: $fontWeight;
@@ -46,3 +45,4 @@
   border-radius: 22px;
   cursor: pointer;
 }
+
