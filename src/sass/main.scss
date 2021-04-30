@@ -1,9 +1,16 @@
 /*
+<<<<<<< Updated upstream
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
 
 // Стили для файла с примером HTML-фрагмента
+=======
+ * Все паршалы импортировать в этот файл
+ */
+
+
+>>>>>>> Stashed changes
 @import './utils/variables';
 @import './utils/normalize';
 @import './utils/mixins';
