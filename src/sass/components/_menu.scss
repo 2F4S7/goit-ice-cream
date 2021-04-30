@@ -1,0 +1,186 @@
+.container-header-other {
+	background-color: $background-color-pink;
+	position: relative;
+
+}
+
+.header-conteiner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1279px) {
+		align-items: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 37px;
+
+	}
+
+	@media screen and (min-width: 1280px) {
+		padding-left: 46px;
+	}
+}
+
+.menu-button {
+	z-index: 55;
+	margin-left: 30px;
+	@media screen and (max-width: 767px) {
+		display: none;
+
+	}
+}
+
+.navigatio {
+
+	@media screen and (max-width: 1279px) {
+		display: none;
+	}
+}
+
+.nav-list {
+	display: flex;
+	position: relative;
+	z-index: 40;
+}
+
+.tablet-menu-button {
+
+	z-index: 100;
+	display: block;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	padding-left: 17px;
+
+	@media screen and (max-width: 767px) {
+		position: relative;
+	}
+
+	@media screen and (min-width: 1280px) {
+		display: none;
+	}
+
+
+}
+
+.tablet-menu-button.is-open {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-right: 30px;
+	padding-left: 4px;
+}
+
+.logo {
+	display: inline-block;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 6px;
+	}
+
+}
+
+.tablet-button {
+	display: flex;
+	align-items: center;
+
+}
+
+.menu-mobile {
+
+	padding-top: 60px;
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	background-color: $background-color-menu;
+	width: 100%;
+
+	@media screen and (min-width: 320px) {
+		width: 250px;
+		height: 502px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 254px;
+		height: 1020px;
+	}
+}
+
+.menu-mobile.is-open {
+	z-index: 55;
+	display: block;
+
+}
+
+.link-mobile-menu {
+
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.28;
+	border: 1px solid #E18298;
+	color: $primary-white;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	@media screen and (min-width: 1280px) {
+		border: none;
+		font-size: 16px;
+		line-height: 1.31;
+		text-align: left;
+		padding-left: 0;
+	}
+}
+
+.tablet-menu-button .icon-cros {
+	display: none;
+}
+
+.tablet-menu-button.is-open .icon-cros {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+.tablet-menu-button.is-open .icon-burger {
+	display: none;
+}
+
+.icon-burger {
+	fill: $accent-color;
+}
+
+.menu-icon-cros {
+	width: 14px;
+	height: 14px;
+}
+
+.menu-icon-burger {
+	width: 20px;
+	height: 20px;
+}
+
+.menu-button-mobile {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nav-item:not(:last-child) {
+	margin-right: 35px;
+}
