@@ -176,7 +176,7 @@
     font-size: 14px;
     line-height: 1.29;
     color: $accent-color;
-    padding: 0px 37px;
+    padding: 0px 40px; //підігнав кнопку під макет. Радецький
     height: 44px;
     cursor: pointer;
     transition: $time $cubic;
@@ -187,6 +187,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      padding: 0px 34px; //підігнав кнопку під макет. Радецький
       margin-left: 0px;
       font-size: 16px;
       line-height: 1.31;
