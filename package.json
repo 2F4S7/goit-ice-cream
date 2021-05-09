@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "homepage": "https://2F4S7.github.io/goit-ice-cream",
+  "homepage": "",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2F4S7/goit-ice-cream.git"
+    "url": "git+https://github.com/RadIgorGo/goit-ice-cream.git"
   },
   "keywords": [],
   "author": "",
