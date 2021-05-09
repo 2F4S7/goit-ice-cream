@@ -7,18 +7,18 @@
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /goit-ice-cream/",
+    "predeploy": "npm run build -- --public-url /goit-ice-cream-my/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RadIgorGo/goit-ice-cream.git"
+    "url": "git+https://github.com/RadIgorGo/goit-ice-cream-my.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/2F4S7/goit-ice-cream/issues"
+    "url": "https://github.com/RadIgorGo/goit-ice-cream-my/issues"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
