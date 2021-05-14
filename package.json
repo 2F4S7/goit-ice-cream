@@ -3,11 +3,11 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://2F4S7.github.io/goit-ice-cream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /goit-ice-cream-my/",
+    "predeploy": "npm run build -- --public-url /goit-ice-cream/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
